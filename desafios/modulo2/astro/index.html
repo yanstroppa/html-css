@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <style>
-        body{
-        background-image: url("espaco.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
+        body {
+            margin: 0;
+            padding: 0;
         }
 
-        #astro{
-            display: block;
-            margin: auto;
-            margin-top: auto;
-           }
+        div#espaço {
+            padding: 0;
+            width: 100vw;
+            min-height: 100vh;
+            background-color: aqua;
+            background-size: cover;
+            background-image: url(espaco.jpg);
+            background-attachment: fixed;
+            background-position: center center;
+            position: relative;
+        }
+
+        div#cara {
+
+            background-size:contain;
+            position: absolute;
+            min-width:250px;
+            min-height: 254px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url(astronauta.png);
+        }
     </style>
 </head>
 
 <body>
-    <img src="astronauta.png" id="astro">
+    <div id="espaço">
+        <div id="cara">
+
+        </div>
+    </div>
 </body>
+
 </html>
