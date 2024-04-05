@@ -1,0 +1,132 @@
+.rubik-scribble-regular {
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .six-caps-regular {
+    font-family: "Six Caps", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .limelight-regular {
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dancing-script-regular {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sriracha-regular {
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+header{
+    background-color: black;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.418);
+}
+
+h1{
+    margin-top:0;
+    color: whitesmoke;
+    font-family: limelight, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    padding-top: 60px;
+    font-size: 4em;
+    margin-bottom:20px;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin:0;
+    font-weight: lighter;
+    color: whitesmoke;
+    padding-top:0;
+    padding-bottom:60px
+}
+
+h2 a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+body{
+    margin: 0;
+    background-image: linear-gradient(to bottom, rgb(195, 122, 255),rgb(255, 110, 110))
+}
+
+main{
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.418);
+    background-color: whitesmoke;
+    max-width: 628px;
+    margin:auto;
+    margin-top:0;
+    font-weight: bold;
+}
+
+p{
+    font-weight: bold;
+    color:whitesmoke;
+    padding: 30% 0% 30% 3%;
+    font-size: 200%;
+    font-family:sriracha;
+    margin-top:0;
+    margin:0;
+    text-align: start;
+    line-height: 1.6em;
+    /*position:absolute;
+    left: 50%;
+    top:50%;
+    transform: translate();*/
+}
+
+.white p{
+    color:black;
+}
+
+span{
+    height:308px;
+     background-color: black;
+}
+
+.flower{
+background-image: url('imagens/background001.jpg');
+background-size: cover;
+background-attachment: fixed;
+}
+
+.book{
+    background-image: url('imagens/background002.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer{
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1%;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: bold;
+}
