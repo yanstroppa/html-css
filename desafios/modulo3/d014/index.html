@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas pt2</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        
+        table col#col1{
+            background-color: purple;
+    
+        }
+
+        body {
+            background-image: linear-gradient(to bottom, rgba(59, 26, 16, 0.925), rgb(31, 11, 11));
+            height: 100vh;
+            width: 100vh;
+            margin: auto;
+        }
+
+        table {
+            margin: auto;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        tr,
+        td,
+        th {
+            border: 2px solid black;
+        }
+
+        th {
+            padding: 8px 25px;
+        }
+
+        td {
+            padding: 8px 25px 8px 4px;
+            text-align: start;
+            background-color: antiquewhite;
+        }
+
+        th,
+        .destaque {
+            background-color: rgb(95, 73, 58);
+            font-weight: bold;
+            color: aliceblue;
+            text-align: start;
+        }
+
+        .numero {
+            padding: 8px 25px;
+            text-align: center;
+        }
+
+        .frescura {
+            background-color: antiquewhite;
+            color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <table>
+        <!--<colgroup> TESTANDO COLGROUP
+            <col id="col1">
+            <col class="col2">
+            <col class="col3" span="2">
+            <col class="col4">
+        </colgroup> -->
+        <tr>
+            <th rowspan="2" scope="col">Area</th>
+            <th rowspan="2" scope="col">Disciplinas</th>
+            <th colspan="2" scope="colgroup" style="text-align: center;">Notas</th>
+            <th rowspan="2" scope="col">Média</th>
+        </tr>
+        <tr>
+            <th scope="col">Nota 1</th>
+            <th scope="col">Nota 2</th>
+        </tr>
+        <tr>
+            <th rowspan="4" class="frescura" scope="rowgroup">Exatas</th>
+            <td>Matemática</td>
+            <td class="numero">0.0</td>
+            <td class="numero">0.0</td>
+            <td class="numero">0.0</td>
+        </tr>
+        <Tr>
+            <td>Fisica</td>
+            <td class="numero">0.0</td>
+            <td class="numero">0.0</td>
+            <td class="numero">0.0</td>
+        </Tr>
+        <Tr>
+            <td>Quimica</td>
+            <td class="numero">0.0</td>
+            <td class="numero">0.0</td>
+            <td class="numero">0.0</td>
+        </Tr>
+        <Tr>
+            <td>Biologia</td>
+            <td class="numero">0.0</td>
+            <td class="numero">0.0</td>
+            <td class="numero">0.0</td>
+        </Tr>
+        <Tr>
+            <th colspan="4" scope="row">Média de Exatas</th>
+            <td class="destaque numero">0.0</td>
+        </Tr>
+        <tr>
+            <th rowspan="2" class="frescura" scope="rowgroup">Humanas</th>
+            <td>História</td>
+            <td class="numero">0.0</td>
+            <td class="numero">0.0</td>
+            <td class="numero">0.0</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td class="numero">0.0</td>
+            <td class="numero">0.0</td>
+            <td class="numero">0.0</td>
+        </tr>
+        <tr>
+            <th colspan="4" scope="row">Média de Humanas</th>
+            <td class="destaque numero">0.0</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
