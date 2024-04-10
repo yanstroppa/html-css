@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exercicio 025</title>
     <style>
-        *{
+        * {
             font-family: Arial, Helvetica, sans-serif;
         }
     </style>
@@ -30,7 +30,7 @@
 
     <h1>Teste Formulário (parte 2!)</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
-        
+
         <p>
             <label for="iuser">Usuario:</label>
             <input type="text" name="usuario" id="iuser" required minlength="10" maxlength="16" autocomplete="username">
@@ -38,7 +38,8 @@
 
         <p>
             <label for="isenha">Senha:</label>
-            <input type="password" name="senha" id="isenha" required minlength="8" max="20" autocomplete="current-password">
+            <input type="password" name="senha" id="isenha" required minlength="8" max="20"
+                autocomplete="current-password">
         </p>
 
         <p>
@@ -49,7 +50,7 @@
 
     <h1>Teste Formulário (parte 3!!)</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
-        
+
         <p>
             <label for="iuser">Usuario:</label>
             <input type="text" name="usuario" id="iuser" required minlength="10" maxlength="16" autocomplete="username">
@@ -71,6 +72,72 @@
         </p>
     </form>
 
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="sxmas" value="M"><label for="sxmas">Masculino</label>
+            <br>
+            <input type="radio" name="sexo" id="sxfem" value="F"><label for="sxfem">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <P>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+
+                <option value="" selected>ESCOLHA O SEU ESTADO'</option>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">sÃO PAULO</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="RN">Rio grande do Norte</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+
+
+            </select>
+        </P>
+
+        <p>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Administrador2</option>
+                <option>Administrador3</option>
+                <option>Administrador4</option>
+                <option>Administrador5</option>
+            </datalist>
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+
 </body>
 
 </html>
+
+<!-- pattern="\d{4,5}-[0-9]{4}$"-->
