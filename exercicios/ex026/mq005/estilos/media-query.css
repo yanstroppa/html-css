@@ -1,9 +1,26 @@
 @charset "UTF-8";
 
-menu{
-    display: inline-block;
+menu {
+    display: block;
+    background-color: rgb(92, 92, 92);
+    text-align: start;
+
 }
 
-header i{
+main {
+    max-width: 992px;
+}
+
+header i#botao {
     display: none;
+}
+
+menu ul li {
+    display: inline-block;
+    background-color: rgb(46, 46, 46);
+
+}
+
+menu ul li a {
+    border: 0;
 }

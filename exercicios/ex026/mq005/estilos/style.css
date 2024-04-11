@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
 }
 
 
-header{
+header {
     text-align: center;
     color: whitesmoke;
     background-color: rgb(92, 92, 92);
@@ -16,94 +16,86 @@ header{
     margin: 0;
 }
 
-header h1{
+header h1 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-menu{
+menu {
     background-color: rgb(66, 66, 66);
     display: none;
-    
 }
 
-body{
-    background-color:rgb(180, 180, 180) ;
+body {
+    background-color: rgb(180, 180, 180);
 
 }
 
-main{
+main {
     background-color: whitesmoke;
-    max-width: 992px;
+    width: 92vw;
     margin: 10px auto 0 auto;
     padding: 10px;
     border-radius: 10px;
 }
 
-main h2{
+main h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-nav{
+nav {
     display: none;
 }
 
-menu ul{
-    list-style-type: circle;
-    
-}
-
-menu ul li a{
+menu ul li a {
     text-decoration: none;
     font-weight: bold;
-    color: bisque;
+    color: whitesmoke;
     display: block;
     border-top: 2px solid rgb(92, 92, 92);
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding: 15px;
 }
 
-menu ul li a:hover{
-    background-color: blueviolet;
+menu ul li a:hover {
+    background-color: rgb(165, 165, 165);
     transition: background-color 0.3s;
 }
 
-main p{
+main p {
     text-align: justify;
     text-indent: 20px;
     margin-bottom: 20px;
 }
 
-footer{
+footer {
     display: none;
     background-color: chartreuse;
-    color: darkmagenta;   
+    color: darkmagenta;
     text-align: center;
     margin-top: 10px;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: darkmagenta;
     font-weight: bolder;
 }
 
-.no-select{
+.no-select {
     user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
 }
 
-i#botao{
+i#botao {
     padding: 10px;
     cursor: pointer;
     display: block;
 }
 
-i#botao:hover{
-    background-color: chartreuse;
-    color: brown;
+i#botao:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     transition: background-color 0.3s, color 0.3s;
 }
- 

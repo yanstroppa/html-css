@@ -11,14 +11,14 @@
 
 </head>
 
-<body>
+<body onResize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
-        
+
         <i class="material-icons no-select" id="botao" onclick="clickMenu()">menu</i>
 
         <menu id="itens">
-           <ul>
+            <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
                 <li><a href="#">Opção 3</a></li>
@@ -26,7 +26,7 @@
             </ul>
         </menu>
 
-            
+
     </header>
 
     <main>
@@ -52,7 +52,7 @@
                 autem
                 maiores aut.
             </p>
-            
+
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad modi facere voluptas ipsam nobis sint.
                 Porro
@@ -70,7 +70,7 @@
                 autem
                 maiores aut.
             </p>
-           
+
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad modi facere voluptas ipsam nobis sint.
                 Porro
@@ -102,15 +102,25 @@
     </footer>
 
     <script>
-        function clickMenu(){
-            if (itens.style.display == 'block'){
+        function clickMenu() {
+            if (itens.style.display == 'block') {
                 itens.style.display = 'none';
             }
-            else{
+            else {
                 itens.style.display = 'block'
             }
-            
         }
+        function mudouTamanho() {
+            if (window.innerWidth >= 600) {
+                itens.style.display = 'block'
+            }
+            else {
+                itens.style.display = 'none'
+            }
+
+        }
+
+
     </script>
 
 </body>
