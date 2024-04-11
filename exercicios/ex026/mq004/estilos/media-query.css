@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@media only print {
+
+    * {
+        font-family: Georgia, 'Times New Roman', Times, serif
+    }
+
+    h1 {
+        text-shadow: NONE;
+        color: black;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main::after{
+        content: 'Impressão feita por yan(eu)';
+        text-decoration: overline;
+        font-size: 1em;
+    }
+
+
+    body {
+        background-image: url(../imagens/back-print.jpg);
+        /* BACKGROUND IMAGE NÃO IMPRIME */
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #print {
+        display: block;
+    }
+
+    #tv {
+        display: none;
+    }
+
+    #tablet {
+        display: none;
+    }
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    #phone {
+        display: none;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #tv {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+    }
+
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    /* não utilizei */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    #phone {
+        display: none;
+    }
+
+    #pc {
+        display: block;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #tv {
+        display: none;
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #phone {
+        display: none;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #tv {
+        display: block;
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+}
