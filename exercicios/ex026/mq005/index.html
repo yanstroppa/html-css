@@ -14,20 +14,19 @@
 <body>
     <header>
         <h1>Meu Site</h1>
+        
+        <i class="material-icons no-select" id="botao" onclick="clickMenu()">menu</i>
 
-        <menu>
-            <i class="material-icons">list</i>
-            <ul>
-                <li>Opção 1</li>
-                <li>Opção 2</li>
-                <li>Opção 3</li>
-                <li>Opção 4</li>
-                <li>Opção 5</li>
+        <menu id="itens">
+           <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
             </ul>
         </menu>
 
-
-
+            
     </header>
 
     <main>
@@ -53,7 +52,7 @@
                 autem
                 maiores aut.
             </p>
-            <br>
+            
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad modi facere voluptas ipsam nobis sint.
                 Porro
@@ -71,7 +70,7 @@
                 autem
                 maiores aut.
             </p>
-            <br>
+           
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad modi facere voluptas ipsam nobis sint.
                 Porro
@@ -94,8 +93,26 @@
                 autem
                 maiores aut.
             </p>
+
         </article>
     </main>
+
+    <footer>
+        Site criado por <a href="https://github.com/yanthecria">yan</a>
+    </footer>
+
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none';
+            }
+            else{
+                itens.style.display = 'block'
+            }
+            
+        }
+    </script>
+
 </body>
 
 </html>

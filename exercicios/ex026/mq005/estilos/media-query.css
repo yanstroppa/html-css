@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+menu{
+    display: inline-block;
+}
+
+header i{
+    display: none;
+}
