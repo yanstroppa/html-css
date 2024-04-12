@@ -19,9 +19,10 @@ html{
 
 
 body{
+    background-color: #5B2A7D;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to bottom, #5F2C82, #5F2C82);
+    background-image: linear-gradient(to bottom, #5F2C82, #822c2c);
     background-attachment: fixed;
 }
 
