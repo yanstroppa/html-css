@@ -12,11 +12,17 @@
 }
 
 
+html{
+    overflow-x: hidden;
+}
+
+
 
 body{
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to bottom, #5F2C82, #5F2C82);
+    background-attachment: fixed;
 }
 
 main{
@@ -61,6 +67,7 @@ form a{
     text-decoration: none;
     text-align: center;
     color: #53AAA7;
+    display: inline-block;
 }
 
 #decor{

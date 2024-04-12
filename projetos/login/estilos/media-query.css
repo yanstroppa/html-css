@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) {
+    
 
     body {
         background-image: linear-gradient(to bottom, #5B2A7D, #4A979B);
@@ -8,7 +9,7 @@
 
     main {
         width: 80vw;
-        height: 30.5vh;
+        height: 285px;
         border-radius: 22px;
     }
 
@@ -21,12 +22,14 @@
         width: 91%;
 
     }
+    
 
     #tabletdecor {
         background-image: url(../metal.jpg);
         background-position: center top;
         background-size: cover;
-        height: 30.5vh;
+        height: 285px;
+       
         width: 22vw;
         float: left;
         border-radius: 20px 0 0 20px;
@@ -36,12 +39,14 @@
         border-radius: 0 20px 20px 0;
         float: right;
         width: 58vw;
-        height: 30.5vh;
+        height: 285px;
+       
     }
 
 }
 
 @media screen and (min-width: 992px) { 
+
     main {
         width: 960px;
         height: 350px;
@@ -73,3 +78,25 @@
 
 
 }
+
+
+
+/* @media screen and (orientation: landscape){
+    main, form, #tabletdecor{
+        height: 100vh;
+
+    }
+
+  
+
+    .purple-icon{
+        font-size: 15vh;
+    }
+    
+
+    form #iemail, form #isenha{
+        max-height: 14vh;
+        width: 45vw;
+    }
+
+} */
