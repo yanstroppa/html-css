@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+
+    body {
+        background-image: linear-gradient(to bottom, #5B2A7D, #4A979B);
+    }
+
+    main {
+        width: 80vw;
+        height: 30.5vh;
+        border-radius: 22px;
+    }
+
+    #decor {
+        display: none;
+    }
+
+    #iemail,
+    #isenha {
+        width: 91%;
+
+    }
+
+    #tabletdecor {
+        background-image: url(../metal.jpg);
+        background-position: center top;
+        background-size: cover;
+        height: 30.5vh;
+        width: 22vw;
+        float: left;
+        border-radius: 20px 0 0 20px;
+    }
+
+    form {
+        border-radius: 0 20px 20px 0;
+        float: right;
+        width: 58vw;
+        height: 30.5vh;
+    }
+
+}
+
+@media screen and (min-width: 992px) { 
+    main {
+        width: 960px;
+        height: 350px;
+    }
+
+    form {
+        border-radius: 20px 0 0 20px;
+        width: 500px;
+        height: 350px;
+    }
+
+  #tabletdecor {
+        float: right;
+        border-radius: 0 20px 20px 0;
+        width: 460px;
+        height: 350px;
+        background-position: center bottom;
+    }
+   
+    main h1{
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    main h2{
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+
+}

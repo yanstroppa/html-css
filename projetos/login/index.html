@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto login</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 
 <body>
 
-    <main>
+    <div class="wrapper">
+    
+
+    <main class="main">
         <div id="decor"></div>
+       <div id="tabletdecor" class="left"></div>
 
         <form method="post">
             <h1>Login</h1>
@@ -20,11 +25,11 @@
 
             <p id="pemail" >
                 <label for="iemail" class="material-icons inline-icon purple-icon" >person</label>
-                <input type="email" name="email" id="iemail">
+                <input type="email" name="email" id="iemail" placeholder="   Insira seu email">
             </p>
             <p id="psenha">
                 <label for="isenha" class="material-icons inline-icon purple-icon" >vpn_key</label>
-                <input type="password" name="senha" id="isenha">
+                <input type="password" name="senha" id="isenha" placeholder="   Insira sua senha">
             </p>
 
             <p id="plogin"><input type="submit" value="Entrar" id="ilogin"></p>
@@ -34,6 +39,7 @@
         </form>
 
     </main>
+</div>
 </body>
 
 </html>
