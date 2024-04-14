@@ -87,13 +87,24 @@
 }
 
 
-
-/* @media screen and (orientation: landscape){
+/* TESTE */
+@media screen and (orientation: landscape) and (max-height: 285px){
     main, form, #tabletdecor{
         height: 100vh;
-
+        border-radius: 0;
     }
 
+    main{
+        width: 100vw;
+    }
+
+    form{
+        width: 70vw;
+    }
+
+    #tabletdecor{
+        width: 30vw;
+    }
   
 
     .purple-icon{
@@ -102,8 +113,16 @@
     
 
     form #iemail, form #isenha{
-        max-height: 14vh;
-        width: 45vw;
+        height: 13vh;
+        width: 90%;
     }
 
-} */
+    form #pemail, form #psenha{
+        height: 14vh;
+    }
+
+    form #ilogin, form #pesq{
+        height: 14vh;
+    }
+
+} 
